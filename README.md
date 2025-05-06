@@ -1,2 +1,3 @@
-# API_Meteorologica
-Creacion de una API meteorológica que obtiene y devuelve datos meteorológicos de una API de terceros.
+# Weather API
+Creating a weather API that retrieves and returns weather data from a third-party API.
+
