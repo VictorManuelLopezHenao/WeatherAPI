@@ -12,7 +12,7 @@ async def fetch_weather(city : str):
         "include":"days"
     }
 
-    async with httpx.AsyncClient() as client:  #bre una sesión asíncrona para hacer solicitudes HTTP
+    async with httpx.AsyncClient() as client:  #abre una sesión asíncrona para hacer solicitudes HTTP
         response = await client.get(BASE_URL, params=params)
 
     if response.status_code == 200:
@@ -21,6 +21,5 @@ async def fetch_weather(city : str):
         return{
             "error":"No se pudo obtener los datos"
         }
-
 
 
